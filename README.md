@@ -1,5 +1,3 @@
-(Generated with the Help of AI)
-
 # Operation-Research-Project
 # Last-Mile Delivery Network Optimization
 ## ISEE-301.601 Operations Research Project — Group 3
