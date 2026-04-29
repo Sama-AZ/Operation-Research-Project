@@ -1,0 +1,33 @@
+/*********************************************
+ * OPL 22.1.1.0 Data
+ * Author: sama
+ * Creation Date: Apr 21, 2026 at 7:14:59 PM
+ *********************************************/
+
+Depots = {"JAFZA"};
+Hubs = {"SiliconHighBay", "Warsan", "AcademicCity"};
+Zones = {"CedreVillas", "SiliconGates", "SemmerVillas", "Dummy"};
+
+//Depot to Hub Costs
+arcDH = { 
+  <"JAFZA", "SiliconHighBay", 0.6>, 
+  <"JAFZA", "Warsan", 0.6>, 
+  <"JAFZA", "AcademicCity", 0.6> 
+};
+
+//Hub to Zone Costs
+arcHZ = {
+  // Silicon High Bay
+  <"SiliconHighBay", "CedreVillas", 0.39>, <"SiliconHighBay", "SiliconGates", 0.39>, 
+  <"SiliconHighBay", "SemmerVillas", 0.46>, <"SiliconHighBay", "Dummy", 0>,
+  // Warsan
+  <"Warsan", "CedreVillas", 0.94>, <"Warsan", "SiliconGates", 0.96>, 
+  <"Warsan", "SemmerVillas", 1.04>, <"Warsan", "Dummy", 0>,
+  // Academic City
+  <"AcademicCity", "CedreVillas", 0.64>, <"AcademicCity", "SiliconGates", 0.66>, 
+  <"AcademicCity", "SemmerVillas", 0.74>, <"AcademicCity", "Dummy", 0>
+};
+
+FixedCost = [483.57, 317.79, 345.58];
+Capacity = [1937, 1164, 1293];
+Demand = [1811, 1200, 840, 543];
